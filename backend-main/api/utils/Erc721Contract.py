@@ -14,7 +14,7 @@ class Erc721Contract:
         if network_id and network_id != NETWORK:
             self.w3 = Web3(
                 Web3.HTTPProvider(
-                    f"https://{network_id}.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
+                    f"https://{network_id}.infura.io/v3/{ALCHEMY_API_KEY}"
                 )
             )
         else:

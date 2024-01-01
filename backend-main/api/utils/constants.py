@@ -3,20 +3,20 @@ import os
 from web3 import Web3
 from web3.middleware import geth_poa_middleware
 
-NETWORK = os.environ.get("NETWORK")
-ALCHEMY_API_KEY = os.environ.get("ALCHEMY_API_KEY")
-ALCHEMY_URL = f"https://{NETWORK}.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
-ALCHEMY_WS_URL = f"wss://{NETWORK}.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
-ETH_ALCHEMY_URL = f"https://eth-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
-ETH_ALCHEMY_WS_URL = f"wss://eth-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
-ETH_MAINNET_ALCHEMY_URL = f"https://eth-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
+NETWORK = os.environ.get("optimism-mainnet")
+ALCHEMY_API_KEY = os.environ.get("5eaec7e9973a470eab3561cd447a9333")
+ALCHEMY_URL = f"https://{NETWORK}.infura.io/v3/{ALCHEMY_API_KEY}"
+ALCHEMY_WS_URL = f"wss://{NETWORK}.infura.io/v3/{ALCHEMY_API_KEY}"
+ETH_ALCHEMY_URL = f"https://mainnet.infura.io/v3/{ALCHEMY_API_KEY}"
+ETH_ALCHEMY_WS_URL = f"wss://mainnet.infura.io/ws/v3/{ALCHEMY_API_KEY}"
+ETH_MAINNET_ALCHEMY_URL = f"https://mainnet.infura.io/v3/{ALCHEMY_API_KEY}"
 
 
 if L2_WS_ALCHEMY_API_KEY := os.environ.get("L2_WS_ALCHEMY_API_KEY"):
-    ALCHEMY_WS_URL = f"wss://{NETWORK}.g.alchemy.com/v2/{L2_WS_ALCHEMY_API_KEY}"
+    ALCHEMY_WS_URL = f"wss://{NETWORK}.infura.io/v3/{L2_WS_ALCHEMY_API_KEY}"
 
 if L1_WS_ALCHEMY_API_KEY := os.environ.get("L1_WS_ALCHEMY_API_KEY"):
-    ETH_ALCHEMY_WS_URL = f"wss://eth-mainnet.g.alchemy.com/v2/{L1_WS_ALCHEMY_API_KEY}"
+    ETH_ALCHEMY_WS_URL = f"wss://mainnet.infura.io/ws/v3/{L1_WS_ALCHEMY_API_KEY}"
 
 MARKETPLACE_FEE = 0.025
 MARKETPLACE_PAYOUT_ADDRESS = "0xeC1557A67d4980C948cD473075293204F4D280fd"
