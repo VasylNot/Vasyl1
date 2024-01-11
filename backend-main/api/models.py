@@ -28,7 +28,7 @@ from api.utils.constants import (
     ETH_ALCHEMY_URL,
     EXCHANGE_CONTRACT_V6_ADDRESS,
     NETWORK,
-    L2ERC721_BRIDGE
+    
 )
 from api.utils.email_utils import (
     send_email_about_campaign_budget,
