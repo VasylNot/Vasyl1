@@ -8,6 +8,7 @@ ALCHEMY_API_KEY = os.environ.get("5eaec7e9973a470eab3561cd447a9333")
 ALCHEMY_URL = f"https://{NETWORK}.infura.io/v3/{ALCHEMY_API_KEY}"
 ALCHEMY_WS_URL = f"wss://{NETWORK}.infura.io/v3/{ALCHEMY_API_KEY}"
 ETH_ALCHEMY_URL = f"https://mainnet.infura.io/v3/{ALCHEMY_API_KEY}"
+L2ERC721_BRIDGE = "0x5a7749f83b81B301cAb5f48EB8516B986DAef23D"
 ETH_ALCHEMY_WS_URL = f"wss://mainnet.infura.io/ws/v3/{ALCHEMY_API_KEY}"
 ETH_MAINNET_ALCHEMY_URL = f"https://mainnet.infura.io/v3/{ALCHEMY_API_KEY}"
 
