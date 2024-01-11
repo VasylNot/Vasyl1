@@ -50,7 +50,6 @@ elif NETWORK == "opt-goerli":
     REWARD_WRAPPER_ADDRESS = ""
     CAMPAIGN_TRACKER_ADDRESS = ""
     WEBSITE_URL = "https://goerli.qx.app"
-    L2ERC721_BRIDGE = "0x8DD330DdE8D9898d43b4dc840Da27A07dF91b3c9"
     ETH_ALCHEMY_URL = f"https://eth-goerli.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
     ETH_ALCHEMY_WS_URL = f"wss://eth-goerli.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
     CHAIN_ID = 420
