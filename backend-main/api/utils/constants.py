@@ -49,6 +49,7 @@ elif NETWORK == "opt-goerli":
     BLUESWEEP_CONTRACT_ADDRESS = ""
     REWARD_WRAPPER_ADDRESS = ""
     CAMPAIGN_TRACKER_ADDRESS = ""
+    L2ERC721_BRIDGE = "0x5a7749f83b81B301cAb5f48EB8516B986DAef23D"
     WEBSITE_URL = "https://goerli.qx.app"
     ETH_ALCHEMY_URL = f"https://eth-goerli.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
     ETH_ALCHEMY_WS_URL = f"wss://eth-goerli.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
