@@ -1,6 +1,7 @@
 aiohttp==3.7.4.post0	
 aiosignal==1.2.0	
 amqp==5.1.0	
+pylibmc==1.5.2
 asgiref==3.4.1	
 async-timeout==3.0.1	
 attrs==21.2.0	
